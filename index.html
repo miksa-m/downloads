@@ -3,10 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download PDF</title>
+    <title>M. J. Miskolczy - Downloads</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        /* Centered header */
+        .header-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px; /* Adjust height as needed */
+            width: 100%;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+		.subheader-container {
+            display: flex;
+            justify-content: center;
+            align-items: top;
+            width: 100%;
+            font-size: 12px;
+            font-weight: regular;
+        }
+
+        /* Center container for download box */
+        .center-container {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+			margin-top: -92px;
+        }
+
+        .download-box {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: white;
+            padding: 12px 18px;
+            border-radius: 5px; /* Less rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .download-box:hover {
+            transform: scale(1.05);
+        }
+
+        .icon {
+            width: 40px;
+            height: 40px;
+        }
+
+        .file-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .file-name {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .file-size {
+            font-size: 14px;
+            color: gray;
+        }
+    </style>
 </head>
 <body>
-    <h2>Download the PDF</h2>
-    <a href="document.pdf" download>Click here to download</a>
+
+    <div class="header-container">
+        Miksa József Miskolczy - Downloads
+    </div>
+	
+	<div class="subheader-container">
+        2025 -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Electrical Engineering MSc. Student at Inha University, Incheon, South Korea<br>
+		2024 - 2025&nbsp;&nbsp;&nbsp;Electric Motor Design Trainee at Jaguar Land Rover Hungary Kft.<br>
+		2021 - 2025&nbsp;&nbsp;&nbsp;Electrical Engineering BSc. from Budapest University of Technology and Economics, Budapest, Hungary
+    </div>
+
+    <div class="center-container">
+        <a href="document.pdf" download class="download-box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Windows_11_Msedge-IDR_X007_PDF_DOC_256x256-32.png" 
+                 alt="Windows PDF Icon" class="icon">
+            <div class="file-info">
+                <span class="file-name">M_J_Miskolczy_BSc_Thesis.pdf</span>
+                <span class="file-size">4.11 MB</span>  <!-- Update file size if needed -->
+            </div>
+        </a>
+    </div>
+
 </body>
 </html>
